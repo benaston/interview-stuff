@@ -2,7 +2,7 @@ Test1
 
 What does the following console application output?
  
-`C#
+```C#
     using System;
     
     class Program
@@ -34,4 +34,4 @@ What does the following console application output?
     public class Cat
     {
         public PetOwner Owner { get; set; }
-    }`
+    }```
