@@ -20,6 +20,4 @@
 
 9. Describe some practises that help you write good quality code.
 
-10. Describe some practises that help you write good quality code.
-
-11. Describe a linked list. What is the main benefit over a traditional array?
+10. Describe a linked list. What is the main benefit over a traditional array?
