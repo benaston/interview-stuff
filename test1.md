@@ -34,4 +34,4 @@ What does the following console application output?
     public class Cat
     {
         public PetOwner Owner { get; set; }
-    }```
+    }
