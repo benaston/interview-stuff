@@ -2,7 +2,8 @@ Test1
 
 What does the following console application output?
  
-`using System;
+`C#
+using System;
 
 class Program
 {
