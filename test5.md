@@ -1,6 +1,6 @@
 ## Test5
 
-*Given this controller, can you think of a pattern that might improve the user’s experience when using the back button having logged in?*
+*Here is a controller with an action that is invoked when a log-in form is submitted. Can you think of a pattern that might improve the user’s experience when using the browser back button?*
 
 ```C#
 public class SessionController : Controller
@@ -17,14 +17,14 @@ public class SessionController : Controller
 	{
 		if (_logInService.LogIn(dto.UserName, dto.Password))
 		{
-			return View("../reportissues/index");
+			return View("homepage");
 		}
 
 		dto.Password = string.Empty;
 		dto.IsInvalidCredentialsMessageVisible = true;
 		dto.ReturnUrl = string.Empty;
 
-		return View("../login/index", dto);
+		return View("loginpage", dto);
 	}
 }
 ```
