@@ -5,8 +5,8 @@
 ```JavaScript
 var v = {
     id: 9,
-    func: function(){
-        console.log( this.id);
+    func: function() {
+        console.log(this.id);
     }
 }
 
