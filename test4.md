@@ -11,7 +11,7 @@ class Program
     {
         var x = false;
         Func<bool> f = () => x;
-        var x = true;
+        x = true;
 
         Console.Out.WriteLine(f());
         Console.ReadLine();
