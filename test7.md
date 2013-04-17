@@ -21,3 +21,5 @@
 9. Describe some practises that help you write good quality code.
 
 10. Describe a linked list. What is the main benefit over a traditional array?
+ 
+11. Code smells, discuss your favourite smells?
