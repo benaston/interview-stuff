@@ -5,7 +5,7 @@
 ```C#
 public class SessionController : Controller
 {
-  private readonly ILogInService _logInService;
+        private readonly ILogInService _logInService;
 
 	public SessionController(ILogInService logInService)
 	{
@@ -21,8 +21,7 @@ public class SessionController : Controller
 		}
 
 		dto.Password = string.Empty;
-		dto.IsInvalidCredentialsMessageVisible = true;
-		dto.ReturnUrl = string.Empty;
+		dto.IsInvalidCredentialsMessageVisible = true;		
 
 		return View("loginpage", dto);
 	}
