@@ -1,6 +1,6 @@
 ## Test5
 
-*Here is a controller with an action that is invoked when a log-in form is submitted. Can you think of a pattern that might improve the user’s experience when using the browser back button?*
+*Here is a controller with an action that is invoked when a log-in form is submitted. Can you think of a change that could be made to this implementation that might improve the user’s experience when using the browser back button?*
 
 ```C#
 public class SessionController : Controller
