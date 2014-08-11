@@ -1,3 +1,11 @@
+Look at the following code:
+
+	function Foo() {}
+	//How many objects have been created as a result of the above line?
+
+
+-----
+
 What does the following print to the console?
 
 	var x = 0;
