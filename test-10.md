@@ -1,13 +1,13 @@
 What does the following print to the console?
 
-var x = 0;
-
-function foo() {
-	setTimeout(function(){
-		console.log(x);
-	}, 10);
-}
-foo(); 
+	var x = 0;
+	
+	function foo() {
+		setTimeout(function(){
+			console.log(x);
+		}, 10);
+	}
+	foo(); 
 
 Ans: 0 (after 10 ms)
 
@@ -15,45 +15,45 @@ Ans: 0 (after 10 ms)
 
 What does the following print to the console?
 
-var x = 0;
-
-function foo() {
-	for(var x = 0; x < 5; x++) {
-		setTimeout(function(){
-			console.log(x);
-		}, 10);
+	var x = 0;
+	
+	function foo() {
+		for(var x = 0; x < 5; x++) {
+			setTimeout(function(){
+				console.log(x);
+			}, 10);
+		}
 	}
-}
-foo(); //outputs '5', five times in very rapid succession (i.e. less than 10ms) - trick question
+	foo(); //outputs '5', five times in very rapid succession (i.e. less than 10ms) - trick question
 
 Tricks: 
  - first, the x < 5 is misdirection and means that the loop will be evaluated five times despite appearances.
  - second, the 10ms is misdirection, and means that everything will happen in rapid succession rather than staged at intervals of 10ms (which is what setTimeout is more typically seen used for). Plus 10ms is too short for the human mind to notice when run, exactly what happens avoiding copy and paste.
  
- var x = 0;
-
-function foo() {
-	console.log(setTimeout(function(){
-		console.log(x);
-	}, 10));
-}
-
-foo(); //integer corresponding to the next handle for setTimeout, followed by 0 (after 10 ms)
+	var x = 0;
+	
+	function foo() {
+		console.log(setTimeout(function(){
+			console.log(x);
+		}, 10));
+	}
+	
+	foo(); //integer corresponding to the next handle for setTimeout, followed by 0 (after 10 ms)
 
 ////////////////////
 
-var x = 0;
-
-function foo() {
-	for(var x = 0; x < 5; x++) {
-		var y = x;
-		setTimeout(function(){
-			console.log(y);
-		}, 10);
+	var x = 0;
+	
+	function foo() {
+		for(var x = 0; x < 5; x++) {
+			var y = x;
+			setTimeout(function(){
+				console.log(y);
+			}, 10);
+		}
 	}
-}
-
-foo(); //outputs '4', five times in very rapid succession (i.e. less than 10ms) - trick question
+	
+	foo(); //outputs '4', five times in very rapid succession (i.e. less than 10ms) - trick question
 
 Tricks: 
  - first, the x < 5 is misdirection and means that the loop will be evaluated five times despite appearances.
@@ -70,17 +70,17 @@ y is closed over by console.log, and is hence outputted to the screen.
 
 ////////////////////
 
-var x = 0;
-
-function foo() {
-	for(var x = 0; x < 5; x++) {
-		setTimeout(function(){
-			console.log(x);
-		}, 10);
+	var x = 0;
+	
+	function foo() {
+		for(var x = 0; x < 5; x++) {
+			setTimeout(function(){
+				console.log(x);
+			}, 10);
+		}
 	}
-}
-
-foo(); //outputs '5', five times in very rapid succession (i.e. less than 10ms) - trick question
+	
+	foo(); //outputs '5', five times in very rapid succession (i.e. less than 10ms) - trick question
 
 Tricks: 
 
@@ -99,20 +99,20 @@ So the value '5' is printed to the console five times, once for each callback on
 
 ////////////////////
 
-var x = 0;
-
-function foo() {
-	for(var x = 0; x < 5; x++) {
-		(function() {
-			var y = x;
-			setTimeout(function(){
-				console.log(y);
-			}, 10);
-		}());
+	var x = 0;
+	
+	function foo() {
+		for(var x = 0; x < 5; x++) {
+			(function() {
+				var y = x;
+				setTimeout(function(){
+					console.log(y);
+				}, 10);
+			}());
+		}
 	}
-}
-
-foo();
+	
+	foo();
 
 Explanation: 
 x increments from zero to 4 through a loop.
