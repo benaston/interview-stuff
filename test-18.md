@@ -1,5 +1,6 @@
 What does the following output to the console?
 
+    ```javascript
     (function (){
       'use strict';
       function Foo() { 
@@ -12,7 +13,7 @@ What does the following output to the console?
     
 What about this?
 
-
+    ```javascript
     (function (){
       'use strict';
       function Foo() { 
