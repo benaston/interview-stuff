@@ -10,6 +10,7 @@ What does the following output to the console?
       }
       new Foo().foo();
     }())
+    ```
     
 What about this?
 
@@ -23,3 +24,4 @@ What about this?
       }
       new Foo().foo();
     }())
+    ```
