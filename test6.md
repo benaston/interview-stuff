@@ -3,7 +3,7 @@
 *Take a look at the following JavaScript:*
 
 ```JavaScript
-'use strict';
+
 var v = {
     id: 9,
     func: function() {
