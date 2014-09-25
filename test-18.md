@@ -19,7 +19,7 @@ What about this?
   'use strict';
   function Foo() { 
     this.foo = function() { 
-      setTimeout(function(){ (console.log(this); }, 0);
+      setTimeout(function(){ console.log(this); }, 0);
     } 
   }
   new Foo().foo();
