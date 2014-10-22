@@ -23,3 +23,7 @@
 10. Describe a linked list. What is the main benefit over a traditional array?
  
 11. Code smells, discuss your favourite smells?
+
+12. What is the constructor property?
+
+13. Explain prototypical inheritance, how it is impleemnted and how it works.
