@@ -1,0 +1,21 @@
+Performance of web applications
+
+Success stories
+
+What makes good code?
+
+Opinions on unit testing?
+
+Description of MVC. Speak around MVC in JavaScript frameworks.
+
+How does the prototype work in JS?
+
+    function A() { foo: function(){} }
+
+    function B() {}
+
+How can I make B inherit from  A?
+
+What is dependenciy inversion? 
+
+What is SOLID?
