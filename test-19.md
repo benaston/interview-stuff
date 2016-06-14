@@ -5,7 +5,7 @@ What happens when the following code is run?
   'use strict'; 
   
   function Bar() { 
-    this.bam = 'bamboozle'; 
+    this.bam = 'bam'; 
   } 
   
   Bar(); 
