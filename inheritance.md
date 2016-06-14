@@ -1,17 +1,10 @@
-#Inheritance in JS
-
+```javascript
 function A() {}
+A.prototype.foo = function() { console.log('foo'); };
 
 function B() {}
+B.prototype = new A();
 
-##Basic 1
-
-    B.prototype = new A(); 
-
-This works, but has the limitation that the constructor of the base is invoked before instanitation of the child.
-
-##Basic 2
-
-    B.prototype = A.prototype; 
-  
-
+b.foo(); // 'foo'
+b.bar(); // 'bar'
+```
