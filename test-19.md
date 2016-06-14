@@ -9,5 +9,5 @@ What happens when the following code is run?
   } 
   
   Bar(); 
-}())
+}());
 ```
