@@ -1,0 +1,8 @@
+function MyService() {
+  this._foo = 'foo';
+  this.getFoo = function() {
+    return this._foo;
+  }
+}
+
+How can I refactor this code so that _foo is really private?
